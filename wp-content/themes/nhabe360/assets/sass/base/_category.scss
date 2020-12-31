@@ -1,0 +1,135 @@
+.news-title{
+  margin-bottom: 25px;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.news{
+
+  &__item:not(:last-child),
+  &__img{
+      margin-bottom: 1rem;
+  }
+
+  &__img{
+    max-height: 150px;
+    border-radius: 4px;
+  }
+
+  &__title{
+    font-size: 20px;
+    color: #000;
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+
+  &__description{
+    line-height: 1.5;
+  }
+
+
+}
+
+.box-title{
+  font-weight: bold;
+  margin-top: -15px;
+
+  &--feature{
+    padding: 40px 0;
+  }
+}
+
+.box-category{
+    box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 30px;
+    margin-bottom: 30px;
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  &__item {
+    padding: 7px 0;
+    border-bottom: 1px solid var(--bright-gray);
+  }
+}
+
+.last-news {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child){
+    margin-bottom: 1.5rem;
+  }
+
+  // &__thumb{
+  //   flex: 0 0 35%;
+  // }
+
+  &__img {
+    width: 90px;
+    height: 67px;
+    border-radius: 4px;
+  }
+
+  &__link {
+    flex-grow: 1;
+    font-size: 0.85em;
+    font-weight: 600;
+  }
+}
+
+.pagination-section{
+  padding-top: 30px;
+  margin-bottom: 30px;
+
+  .page-item{
+    .page-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border: 0;
+      color:  var(--black);
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      margin: 0 2px;
+      transition: all 0.2s ease-in-out;
+      
+    }
+
+    &.disabled .page-link {
+      color: var(--dark-gray);
+      pointer-events: none;
+      cursor: auto;
+      background-color: var(--white);
+    }
+
+    &.disabled:hover .page-link{
+      transition: none;
+      color: initial;
+    }
+
+    &:hover .page-link{
+      color: var(--primary-red);
+    }
+
+    &.active .page-link{
+      background-color: var(--primary-red);
+      border-color: var(--primary-red);
+      color: var(--white);
+    }
+
+
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px){
+  .last-news {
+    flex-direction: column;
+  }
+}
