@@ -41,3 +41,36 @@ $('.owl-carousel').on('changed.owl.carousel', function (event) {
 
 //TOOLTIP
 $('[data-toggle="tooltip"]').tooltip();
+
+//CHECKBOX
+$(".checkbox-menu").on("change", "input[type='checkbox']", function () {
+    $(this).closest("li").toggleClass("active", this.checked);
+});
+
+$(document).on('click', '.allow-focus', function (e) {
+    e.stopPropagation();
+});
+
+//HIDE MAP
+
+$('.control .icon').click(function () {
+    $('.left-item').slideToggle(1000, function () {
+        // if ($('.right-item').hasClass('col-sm-7')) {
+        //     $('.right-item').removeClass('col-sm-7')
+        //     $('.right-item').addClass('col-sm-12')
+        // } else {
+        //     $('.right-item').addClass('col-sm-7')
+        //     $('.right-item').removeClass('col-sm-12')
+        // }
+
+        if ($('.left-item').hasClass('d-none')) {
+            $('.left-item').removeClass('d-none');
+            $('.right-item').attr('class', 'col-sm-7 right-item');
+        } else {
+            $('.left-item').addClass('d-none');
+            $('.right-item').attr('class', 'col-sm-12 right-item');
+        }
+    });
+
+
+})
