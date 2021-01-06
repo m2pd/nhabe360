@@ -289,7 +289,109 @@
     </div>
   </div> -->
   <div class="wrapper mt-5 pt-2">
-    <section id="detail">
+    <div class="container-fluid">
+      <form action="#" class="form-search">
+        <div class="row box-filter">
+          <div class="col-sm-auto">
+            <div class="form-group">
+              <select class="form-control form-control-sm" id="wards" name="wards">
+                <option value="">Vui lòng chọn</option>
+                <option value="9746">Lộc Thọ</option>
+                <option value="9737">Ngọc Hiệp</option>
+                <option value="9760">Phước Đồng</option>
+                <option value="9744">Phước Hải</option>
+                <option value="9749">Phước Hòa</option>
+                <option value="9751">Phước Long</option>
+                <option value="9745">Phước Tân</option>
+                <option value="9747">Phước Tiến</option>
+                <option value="9742">Phương Sài</option>
+                <option value="9743">Phương Sơn</option>
+                <option value="9748">Tân Lập</option>
+                <option value="9740">Vạn Thắng</option>
+                <option value="9741">Vạn Thạnh</option>
+                <option value="9735">Vĩnh Hải</option>
+                <option value="9758">Vĩnh Hiệp</option>
+                <option value="9734">Vĩnh Hòa</option>
+                <option value="9753">Vĩnh Lương</option>
+                <option value="9755">Vĩnh Ngọc</option>
+                <option value="9750">Vĩnh Nguyên</option>
+                <option value="9736">Vĩnh Phước</option>
+                <option value="9754">Vĩnh Phương</option>
+                <option value="9759">Vĩnh Thái</option>
+                <option value="9756">Vĩnh Thạnh</option>
+                <option value="9738">Vĩnh Thọ</option>
+                <option value="9757">Vĩnh Trung</option>
+                <option value="9752">Vĩnh Trường</option>
+                <option value="9739">Xương Huân</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-auto">
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Loại hình
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu checkbox-menu allow-focus" aria-labelledby="dropdownMenu1">
+
+                <li>
+                  <label>
+                    Loại hình
+                    <input type="checkbox">
+                  </label>
+                </li>
+
+                <li>
+                  <label>
+                    Loại hình chung cư
+                    <input type="checkbox">
+                  </label>
+                </li>
+
+                <li>
+                  <label>
+                    Biệt thự, liền kề
+                    <input type="checkbox">
+                  </label>
+                </li>
+
+                <li>
+                  <label>
+                    Đất nền
+                    <input type="checkbox">
+                  </label>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-auto">
+            <div class="form-group">
+              <select class="form-control form-control-sm" id="wards" name="wards">
+                <option value="">Khoảng giá</option>
+                <option value="9746">
+                  < 500tr</option> <option value="9737">500 - 800 tr
+                </option>
+                <option value="9760">800tr - 1 tỷ</option>
+                <option value="9744">1 - 2 tỷ</option>
+                <option value="9749">2 - 3 tỷ</option>
+                <option value="9751">3 - 5 tỷ</option>
+                <option value="9745">> 100 tỷ</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-auto d-flex align-items-center">
+            <label class="mb-0 mr-2" for="vol">Khoảng giá:</label>
+            <input type="range" id="vol" name="vol" min="0" max="50">
+          </div>
+
+        </div>
+
+      </form>
+    </div>
+  </div>
+  <div class="wrapper mt-0">
+    <section id="detail" class="pt-0">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
