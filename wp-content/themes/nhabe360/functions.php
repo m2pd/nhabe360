@@ -127,6 +127,10 @@ if (!function_exists('add_stylesheet')) :
         $css_result .= '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">' . PHP_EOL;
         $css_result .= '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">' . PHP_EOL;
         $css_result .= '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">' . PHP_EOL;
+        //fancy box
+        $css_result .= '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">' . PHP_EOL;
+        $css_result .= '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">' . PHP_EOL;
+
         $css_result .= '<link rel="stylesheet" href="' . get_template_directory_uri() . '/assets/css/main.css?v=' . rand() . '">' . PHP_EOL;
         $css_result .=  '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>' . PHP_EOL;
         if ($echo) {
@@ -144,6 +148,12 @@ if (!function_exists('add_javascript')) :
         $js_result .= '<script type="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>' . PHP_EOL;
         $js_result .= '<script type="text/javascript" src ="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>' . PHP_EOL;
         $js_result .= '<script type="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>' . PHP_EOL;
+        $js_result .= '<script type="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>' . PHP_EOL;
+
+        $js_result .= '<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>' . PHP_EOL;
+        $js_result .= '<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery.js"></script>' . PHP_EOL;
+        $js_result .= '<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.js"></script>' . PHP_EOL;
+
         $js_result .= '<script type="text/javascript" src ="' . get_template_directory_uri() . '/assets/js/min/scripts.js?v=' . rand() . '"></script>' . PHP_EOL;
         if ($echo)
             echo $js_result;

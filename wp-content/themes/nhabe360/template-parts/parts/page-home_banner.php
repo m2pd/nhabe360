@@ -595,7 +595,7 @@ if ($image && $image != '') :
             <h2>Khám phá khu vực</h2>
         </div>
         <div class="discover__list discover-list">
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme" id="discover-carousel">
                 <!-- <div class="row"> -->
                 <div class="item-slide">
                     <div class="item">
