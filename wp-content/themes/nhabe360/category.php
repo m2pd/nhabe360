@@ -418,17 +418,37 @@
               <!-- End Product Images Slider -->
 
               <!-- Begin product thumb nav -->
-              <ul class="thumb-nav">
-                <li><img src="<?php echo get_template_directory_uri() . '/assets/images/long-thoi.jpg' ?>"></li>
-                <li><img src="<?php echo get_template_directory_uri() . '/assets/images/long-thoi2.jpg' ?>"></li>
-                <li><img src="<?php echo get_template_directory_uri() . '/assets/images/long-thoi3.jpg' ?>"></li>
-                <li><img src="<?php echo get_template_directory_uri() . '/assets/images/long-thoi4.jpg' ?>"></li>
-                <li><img src="<?php echo get_template_directory_uri() . '/assets/images/long-thoi5.jpg' ?>"></li>
-              </ul>
+              <div class="row">
+                <div class="col-md-7">
+                  <ul class="thumb-nav">
+                    <li><img src="<?php echo get_template_directory_uri() . '/assets/images/long-thoi.jpg' ?>"></li>
+                    <li><img src="<?php echo get_template_directory_uri() . '/assets/images/long-thoi2.jpg' ?>"></li>
+                    <li><img src="<?php echo get_template_directory_uri() . '/assets/images/long-thoi3.jpg' ?>"></li>
+                    <li><img src="<?php echo get_template_directory_uri() . '/assets/images/long-thoi4.jpg' ?>"></li>
+                    <li><img src="<?php echo get_template_directory_uri() . '/assets/images/long-thoi5.jpg' ?>"></li>
+                  </ul>
+                </div>
+                <div class="col-md-5">
+                  <div class="control">
+                    <div class="btn-view" id="btnview360" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Xem 3D">
+                      <div class="icon">
+                        <i class="fas fa-dice-d6"></i>
+                        <p>Xem 3D</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
               <!-- End product thumb nav -->
             </div>
             <!-- End Product Images & Alternates -->
-
+            <div class="popup-360">
+              <iframe src="https://www.google.com/maps/embed?pb=!4v1609916344613!6m8!1m7!1sCAoSLEFGMVFpcFB1LUZBYTY3ZU5yWFVuVmVDTWxNemlBcG5pZHVhckU0U2lDVzJ4!2m2!1d12.25142!2d109.1809833!3f118.78298243552331!4f10.74165190032899!5f0.7820865974627469" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> <a href="javascript:void(0)" class="close-popup">
+                <i class="fa fa-times"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
